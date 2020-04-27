@@ -1,0 +1,19 @@
+{
+  "name": "mardown-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Oluwafikayo Ajayi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-builder": "^22.5.1"
+  },
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  }
+}
