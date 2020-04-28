@@ -1,10 +1,13 @@
 {
   "name": "electron-with-angular",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "serve": "ng serve",
+    "start": "SET DEBUG=true && electron .",
     "build": "ng build",
+    "build.prod": "ng build --prod --baseHref=./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -28,10 +31,11 @@
     "@angular/cli": "~9.0.5",
     "@angular/compiler-cli": "~9.0.5",
     "@angular/language-service": "~9.0.5",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "electron": "^8.2.4",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.3.0",
