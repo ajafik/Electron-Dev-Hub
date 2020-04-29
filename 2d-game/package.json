@@ -2,9 +2,9 @@
   "name": "2d-game",
   "version": "1.0.0",
   "description": "2D game with Phaser and Electron",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "author": "Oluwafikayo Ajayi",
   "license": "ISC",
