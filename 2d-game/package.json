@@ -1,0 +1,15 @@
+{
+  "name": "2d-game",
+  "version": "1.0.0",
+  "description": "2D game with Phaser and Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Oluwafikayo Ajayi",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.4",
+    "phaser": "^3.23.0"
+  }
+}
