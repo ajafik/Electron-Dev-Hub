@@ -15,10 +15,10 @@ const routes: Routes = [
     path: 'chat',
     component: ChatComponent
   },
-  // {
-  //   path: 'chat/:group/messages',
-  //   component: MessagesComponent
-  // }
+  {
+    path: 'chat/:group/messages',
+    component: MessagesComponent
+  }
 ];
 
 @NgModule({

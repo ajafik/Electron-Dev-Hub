@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/database';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-chat',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit {
+  groups: Observable<any>;
 
-  constructor() { }
+  constructor(private firebase: AngularFireDatabase) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.groups = this.firebase.list('groups').valueChanges();
+    console.log(this.groups);
   }
-
 }
