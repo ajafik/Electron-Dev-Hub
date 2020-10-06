@@ -9,7 +9,7 @@
   "author": "Oluwafikayo Ajayi",
   "license": "ISC",
   "dependencies": {
-    "electron": "^8.2.4",
+    "electron": "^8.5.1",
     "phaser": "^3.23.0"
   }
 }
